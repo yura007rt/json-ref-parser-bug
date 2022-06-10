@@ -1,0 +1,6 @@
+title: CreateAddressUnitResponse
+type: object
+properties:
+  addressUnit:
+    description: Current field contains an ID of address Unit
+    $ref: './external-path-3.yaml'

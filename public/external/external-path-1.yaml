@@ -1,0 +1,43 @@
+/api/v1/testAddress/address:
+  get:
+    tags:
+      - Address API
+    operationId: getAddressUnitsByName
+    summary: Get Address Unit By Name
+    parameters:
+      - name: name
+        in: query
+        required: false
+        schema:
+          type: string
+          description: Name of address unit
+          example: 1819
+      - name: limit
+        in: query
+        required: false
+        schema:
+          type: integer
+          description: Limit the address unit list size. Applicable values between 1 and 30.
+          example: 10
+    responses:
+      200:
+        description: OK
+    x-nc-security-policy:
+      name: get.address.unit.by.name
+  post:
+    tags:
+      - Address API
+    operationId: createAddressUnit
+    summary: Create Address Unit
+    responses:
+      201:
+        description: OK
+        content:
+          '*/*':
+            schema:
+              $ref: './external-path-2.yaml'
+            example:
+              addressUnit:
+                id: 9144829697213799999
+    x-nc-security-policy:
+      name: create.address.unit

@@ -1,0 +1,34 @@
+{
+  "name": "json-ref-parser-bug",
+  "version": "0.0.0",
+  "private": false,
+  "files": [
+    "/dist"
+  ],
+  "scripts": {
+    "build": "tsc && vite build",
+    "dev": "vite --host",
+    "preview": "yarn run build && vite preview --host"
+  },
+  "dependencies": {
+    "@apidevtools/json-schema-ref-parser": "9.0.9",
+    "js-yaml": "4.1.0",
+    "react": "18.1.0",
+    "react-dom": "18.1.0"
+  },
+  "devDependencies": {
+    "@esbuild-plugins/node-globals-polyfill": "0.1.1",
+    "@esbuild-plugins/node-modules-polyfill": "0.1.4",
+    "@types/js-yaml": "4.0.5",
+    "@types/react": "18.0.9",
+    "@types/react-dom": "18.0.5",
+    "@vitejs/plugin-react": "1.3.2",
+    "rollup-plugin-polyfill-node": "0.9.0",
+    "ts-node": "10.8.0",
+    "typescript": "4.7.2",
+    "vite": "2.9.10"
+  },
+  "eslintConfig": {
+    "extends": ".eslintrc.json"
+  }
+}

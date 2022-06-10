@@ -1,0 +1,8 @@
+title: BaseId
+type: object
+properties:
+  id:
+    type: string
+    format: NCID
+    description: Unique ID of AddressUnit
+    example: 9144829697213799999
